@@ -1,0 +1,13 @@
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main">
+        {{#post}}
+            {{> content_no_title width="full"}}
+        {{/post}}
+        {{#is "post"}}
+            {{> related}}
+            {{> comment}}
+        {{/is}}
+    </main>
+</div>
